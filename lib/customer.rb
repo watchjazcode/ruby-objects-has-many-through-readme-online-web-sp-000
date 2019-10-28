@@ -29,7 +29,7 @@ class Customer
   def waiters
     collected_waiters = []
     customers.each do |customer|
-      collected_waiters << appointment.patient
+      collected_waiters << meal.waiter
     end
     return collected_waiter
   end

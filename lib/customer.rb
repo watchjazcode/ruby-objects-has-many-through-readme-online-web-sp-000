@@ -29,11 +29,9 @@ class Customer
   end
   
   def waiters
-    collected_waiters = []
-    customers.each do |customer|
-      collected_waiters << meal.waiter
+    meals.map do |meal|
+      meal.waiter
     end
-    return collected_waiter
   end
   
 end

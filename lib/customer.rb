@@ -28,7 +28,7 @@ class Customer
   
   def waiters
     collected_waiters = []
-    customer.each do |appointment|
+    customers.each do |appointment|
       collected_patients << appointment.patient
     end
     return collected_patients

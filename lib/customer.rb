@@ -26,7 +26,7 @@ class Customer
     Meal.all
   end
   
-  def patients
+  def waiters
     collected_waiters = []
     appointments.each do |appointment|
       collected_patients << appointment.patient

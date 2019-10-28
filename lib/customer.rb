@@ -22,7 +22,7 @@ class Customer
     Meal.new(waiter, total, tip)
   end
   
-  def appointments 
+  def meals 
     Appointment.all.select {|appointment| appointment.doctor == self}
   end
   

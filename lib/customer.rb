@@ -23,11 +23,11 @@ class Customer
   end
   
   def meals 
-    Appointment.all.select {|appointment| appointment.doctor == self}
+    Meal.all
   end
   
   def patients
-    collected_patients = []
+    collected_waiters = []
     appointments.each do |appointment|
       collected_patients << appointment.patient
     end
